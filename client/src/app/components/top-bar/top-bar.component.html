@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="mat-elevation-z12">
+
+  <div>
+    <mat-icon [matMenuTriggerFor]="appMenu" class="mat-elevation-z2"
+      matTooltip="menu"
+    >menu</mat-icon>
+  </div>
+
+  <div>Angular 17 and Node.js 20 Template</div>
+
+  <div>
+    <mat-icon [routerLink]="['/documentation']" class="mat-elevation-z2"
+      matTooltip="Developer resources"
+    >description</mat-icon> &nbsp;
+    <mat-icon [routerLink]="['/help']" class="mat-elevation-z2"
+      matTooltip="Help"
+    >help</mat-icon> &nbsp;
+  </div>
+
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item [routerLink]="['/']"><mat-icon>home</mat-icon ></button>
+</mat-menu>
