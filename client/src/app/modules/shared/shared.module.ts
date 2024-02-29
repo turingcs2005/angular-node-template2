@@ -44,6 +44,7 @@ import { SingleChoiceComponent } from './form-controls/single-choice/single-choi
 import { RadioGroupComponent } from './form-controls/radio-group/radio-group.component';
 import { SnackBarComponent } from './misce/snack-bar/snack-bar.component';
 import { SpinnerComponent } from './misce/spinner/spinner.component';
+import { LocalStorageInputComponent } from './form-controls/local-storage-input/local-storage-input.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { SpinnerComponent } from './misce/spinner/spinner.component';
     RadioGroupComponent,
     SnackBarComponent,
     SpinnerComponent,
+    LocalStorageInputComponent,
   ],
   imports: [
     CommonModule, 
@@ -136,6 +138,7 @@ import { SpinnerComponent } from './misce/spinner/spinner.component';
     SpinnerComponent,
     SnackBarComponent,
     RadioGroupComponent,
+    LocalStorageInputComponent
 
   ],
   providers: [CurrencyPipe]
