@@ -16,7 +16,7 @@ export class LocalStorageInputComponent implements OnInit, OnDestroy {
   @Input() size: string  = '';
   @Input() icon = '';
   @Input() length = 10;  // length of local storage array. 10 distinct past values are stored by default
-  @Input() name: string = 'previousValues';       // name for local storage array. defaults to x
+  @Input() name: string = 'previousValues';       // name for local storage array. defaults to previousValues 
 
   options: string[] = [];
   filteredOptions: Observable<any[]>
